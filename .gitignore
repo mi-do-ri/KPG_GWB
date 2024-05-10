@@ -1,0 +1,6 @@
+*.log
+*.json
+*.png
+*.pyc
+*.cpython-39.pyc
+

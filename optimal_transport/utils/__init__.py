@@ -1,0 +1,2 @@
+from .functional import list_to_array, unif, solve_1d_linesearch_quad, update_square_loss, update_square_loss_kpg, update_kl_loss, check_random_state, softmax
+from .distances import Distance, SquaredEuclidean, KLDiv, JSDiv
