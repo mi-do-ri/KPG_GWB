@@ -53,10 +53,11 @@ class Experiment:
             json.dump(self.record_, f)
         self.logger.debug("Checkpoint at {log_path}")
     
-    def load(self, log_path: str) -> Dict:
+    @staticmethod
+    def load(log_path: str) -> Dict:
         with open(log_path, "r") as f:
-            self.record_ = json.load(f)
-        return self.record_
+            record_ = json.load(f)
+        return record_
 
 
     

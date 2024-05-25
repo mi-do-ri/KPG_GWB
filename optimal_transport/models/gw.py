@@ -1021,7 +1021,7 @@ class KPG_RL_GW(object):
         prob = cvx.Problem(obj,cons)
         prob.solve()
 
-        print(prob.status)
+        # print(prob.status)
         pi = x.value
 
         pi = np.reshape(pi,(len(q),len(p)))
